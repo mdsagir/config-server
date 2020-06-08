@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: cart
+#management.endpoints.web.exposure.include: "*"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: heapdump,liquibase,loggers,prometheus,threaddump,refresh,info,metrics,health
+#management:
+#  security:
+#    enabled: false
